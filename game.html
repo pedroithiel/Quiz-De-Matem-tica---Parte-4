@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adivinhe a Palavra</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="game.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h3 id="player1Name"></h3>
+        <h3 id="pontuacao"></h3>
+        <br>
+        <br>
+        <h3 id="player2Name"></h3>
+        <h3 id="pontuacao2"></h3>
+        <center>
+            <h2 style="color: white;">Adivinhe a Palavra!</h2>
+            <h1 id=TurnoPergunta></h1>
+            <h1 id="TurnoResposta"></h1>
+
+            <br>
+            <br>
+            <div id="output" class=”col-lg-6”>
+
+            </div>
+            <label>Envie sua Palavra: <b style="color: red">Utilize uma palavra com 5 ou mais letras</b></label>
+            <input type="text" id="secreto" placeholder="Coloque a palavra secreta" class="form-control"></input>
+            <br>
+            <button id="palavra" onclick="enviar()" class="btn btn-info">Enviar palavra</button>
+    </div>
+    <script src="jogo.js"></script>
+</body>
+
+
+</html>
